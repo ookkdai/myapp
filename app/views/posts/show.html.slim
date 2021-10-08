@@ -6,3 +6,7 @@ p
 p
   | 内容 
   = @post.content
+
+- if @post.image?
+  p
+    = image_tag @post.image.url
