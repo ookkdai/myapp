@@ -7,4 +7,6 @@
     = form.label :content
     = form.text_field :content
   div
+    = form.file_field :image, accept: "image/png,image/jpeg,image/gif"
+  div
     = form.submit button_value
